@@ -1,0 +1,22 @@
+{
+    "schools": [
+        {
+            "slug": "demo-school",
+            "name": "Demo School",
+            "targetPledges": 500,
+            "welcomeMessage": "Welcome students! Take the pledge for our nation."
+        },
+        {
+            "slug": "delhi-public-school",
+            "name": "Delhi Public School",
+            "targetPledges": 1000,
+            "welcomeMessage": "DPS students - Join us in honoring our flag!"
+        },
+        {
+            "slug": "kendriya-vidyalaya",
+            "name": "Kendriya Vidyalaya",
+            "targetPledges": 800,
+            "welcomeMessage": "KV students - Take the National Flag Pledge!"
+        }
+    ]
+}

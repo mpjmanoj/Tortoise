@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+  <title>Tortoise Guardians 🐢</title>
+
+  <meta name="description"
+    content="Be a guardian for the tortoise. Take the quiz, learn about these ancient voyagers, and get your Guardian Certificate." />
+  <meta name="keywords" content="tortoise, guardians, conservation, pledge, certificate, reptiles, India, wildlife" />
+  <meta name="author" content="Tortoise Guardians" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tortoise Guardians 🐢" />
+  <meta property="og:description"
+    content="Tortoises need our protection. Be a guardian. Take the quiz and earn your certificate." />
+  <meta property="og:site_name" content="Tortoise Guardians" />
+
+  <meta name="theme-color" content="#558B2F" />
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐢</text></svg>" />
+
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            earth: '#5D4037',
+            bark: '#3E2723',
+            leaf: '#558B2F',
+            clay: '#A1887F',
+            sand: '#D7CCC8',
+            sky: '#E0F7FA',
+            canvas: '#EFEBE9',
+            warmWhite: '#F5F5F5',
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            serif: ['Cormorant Garamond', 'serif'],
+            display: ['Syne', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-out',
+            'slide-up': 'slideUp 0.6s ease-out',
+            'float-slow': 'floatSlow 8s infinite ease-in-out',
+            'float-delayed': 'floatDelayed 10s infinite ease-in-out reverse',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(24px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            },
+            floatSlow: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-20px)' },
+            },
+            floatDelayed: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(20px)' },
+            },
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- html2canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <!-- Cropper.js -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.js"></script>
+
+  <style>
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .cropper-view-box,
+    .cropper-face {
+      border-radius: 50%;
+    }
+
+    .cropper-view-box {
+      outline: 0;
+      box-shadow: 0 0 0 1px #558B2F;
+    }
+
+    body {
+      background-color: #F2F0E9;
+    }
+  </style>
+</head>
+
+<body class="text-stone-800 antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
